@@ -1,0 +1,171 @@
+.burger {
+  width: 200px;
+  height: 150px;
+  margin: 100px auto;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.burger:hover {
+  transform: scale(1.1);
+}
+
+.bun-top {
+  width: 200px;
+  height: 60px;
+  background: #f5b342;
+  border-radius: 100px 100px 20px 20px;
+  position: absolute;
+  top: 0;
+  box-shadow: inset -10px -10px 20px #d89b38;
+  transition: all 0.3s ease;
+}
+
+.burger:hover .bun-top {
+  transform: translateY(-5px) rotate(-5deg);
+}
+
+.lettuce {
+  width: 180px;
+  height: 10px;
+  background: #8dcc3d;
+  border-radius: 10px;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  transition: all 0.3s ease;
+}
+
+.burger:hover .lettuce {
+  transform: scaleX(1.05);
+}
+
+.cheese {
+  width: 190px;
+  height: 8px;
+  background: #ffd700;
+  border-radius: 5px;
+  position: absolute;
+  top: 70px;
+  left: 5px;
+  transition: all 0.3s ease;
+}
+
+.burger:hover .cheese {
+  transform: scaleX(1.1) translateY(-2px);
+}
+
+.patty {
+  width: 170px;
+  height: 25px;
+  background: #6d3b0e;
+  border-radius: 15px;
+  position: absolute;
+  top: 80px;
+  left: 15px;
+  box-shadow: inset -5px -5px 10px #4a2909;
+  transition: all 0.3s ease;
+}
+
+.burger:hover .patty {
+  transform: scaleY(1.2);
+}
+
+.tomato {
+  width: 160px;
+  height: 12px;
+  background: #e74c3c;
+  border-radius: 10px;
+  position: absolute;
+  top: 105px;
+  left: 20px;
+  transition: all 0.3s ease;
+}
+
+.burger:hover .tomato {
+  transform: scaleX(1.05) translateY(-2px);
+}
+
+.bun-bottom {
+  width: 200px;
+  height: 40px;
+  background: #f5b342;
+  border-radius: 20px 20px 40px 40px;
+  position: absolute;
+  top: 120px;
+  box-shadow: inset -10px 0px 20px #d89b38;
+  transition: all 0.3s ease;
+}
+
+.burger:hover .bun-bottom {
+  transform: translateY(5px) rotate(5deg);
+}
+
+.seed {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.seed1 {
+  width: 8px;
+  height: 8px;
+  top: 15px;
+  left: 30px;
+}
+
+.seed2 {
+  width: 10px;
+  height: 10px;
+  top: 20px;
+  left: 80px;
+}
+
+.seed3 {
+  width: 6px;
+  height: 6px;
+  top: 15px;
+  left: 120px;
+}
+
+.seed4 {
+  width: 7px;
+  height: 7px;
+  top: 25px;
+  left: 160px;
+}
+
+.seed5 {
+  width: 9px;
+  height: 9px;
+  top: 10px;
+  left: 50px;
+}
+
+/* Plate */
+.plate {
+  width: 250px;
+  height: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  position: absolute;
+  top: 160px;
+  left: -25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text */
+.title {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+  color: #333;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.burger:hover~.title {
+  color: #e74c3c;
+  transform: scale(1.1);
+}
